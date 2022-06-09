@@ -1,0 +1,891 @@
+Jicofo 2022-06-08 08:09:18.010 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 08:09:18.272 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 08:09:18.274 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 08:09:18.275 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#56: Error loading config file: java.io.FileNotFoundException: /etc/jitsi/jicofo/sip-communicator.properties (No such file or directory)
+Jicofo 2022-06-08 08:09:18.276 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 08:09:18.276 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 08:09:18.921 INFO: [1] JicofoServices.createAuthenticationAuthority#196: Authentication service disabled.
+Jicofo 2022-06-08 08:09:19.177 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 08:09:19.188 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 08:09:19.236 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 08:09:19.252 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 08:09:19.254 INFO: [1] JicofoServices.<init>#121: No Jibri detector configured.
+Jicofo 2022-06-08 08:09:19.255 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 08:09:19.283 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 08:09:19.457 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1605ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 08:09:19.549 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 08:09:19.625 INFO: [16] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 08:09:19.809 INFO: [16] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 08:09:19.816 INFO: [16] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 08:09:20.035 INFO: [16] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 08:09:20.037 INFO: [16] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 08:09:20.102 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 08:09:20.204 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 08:09:20.475 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@252744a1{/,null,AVAILABLE}
+Jicofo 2022-06-08 08:09:20.493 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@59496961{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 08:09:20.497 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2649ms
+Jicofo 2022-06-08 08:09:20.512 INFO: [18] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:09:20.544 WARNING: [18] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 08:09:20.546 INFO: [18] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:09:20.556 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:16:55.719 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:16:55.720 INFO: [30] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:16:55.721 INFO: [32] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:16:55.731 WARNING: [79] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 08:16:55.732 SEVERE: [79] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 08:16:55.733 INFO: [79] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 08:16:56.735 INFO: [80] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 3
+Jicofo 2022-06-08 08:16:57.735 INFO: [80] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 2
+Jicofo 2022-06-08 08:16:58.735 INFO: [80] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 1
+Jicofo 2022-06-08 08:16:59.736 INFO: [80] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 0
+Jicofo 2022-06-08 08:16:59.736 INFO: [80] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 0
+Jicofo 2022-06-08 08:16:59.837 INFO: [80] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 08:16:59.838 INFO: [80] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 08:16:59.843 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:16:59.844 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:16:59.845 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:16:59.859 INFO: [80] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 08:16:59.859 INFO: [80] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 08:17:03.664 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 08:17:03.837 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 08:17:04.027 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 08:17:04.029 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 08:17:04.032 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 08:17:04.032 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 08:17:04.573 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 08:17:04.584 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 08:17:04.803 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 08:17:04.808 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 08:17:04.835 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 08:17:04.850 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 08:17:04.853 INFO: [1] JicofoServices.<init>#121: No Jibri detector configured.
+Jicofo 2022-06-08 08:17:04.854 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 08:17:04.863 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 08:17:04.954 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1270ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 08:17:05.027 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 08:17:05.074 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 08:17:05.231 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 08:17:05.239 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 08:17:05.295 INFO: [31] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:17:05.318 WARNING: [31] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 08:17:05.320 INFO: [31] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:17:05.328 INFO: [33] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:17:05.394 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 08:17:05.396 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 08:17:05.399 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 08:17:05.499 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 08:17:05.751 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@6cfbbff7{/,null,AVAILABLE}
+Jicofo 2022-06-08 08:17:05.763 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@4bb003e9{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 08:17:05.763 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2080ms
+Jicofo 2022-06-08 08:17:12.480 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:17:12.480 INFO: [30] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:17:12.481 INFO: [33] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:17:18.597 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:17:18.598 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:17:18.599 INFO: [33] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:17:36.498 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: confidentmonumentsstayso@conference.rapat.space
+Jicofo 2022-06-08 08:17:36.499 INFO: [37] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: bd05a1aa-705f-4af5-b7a2-2a4c794a4934
+Jicofo 2022-06-08 08:17:36.499 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/zp_-haMXEGlz with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/zp_-haMXEGlz, SID=bd05a1aa-705f-4af5-b7a2-2a4c794a4934, MUID=2636ace7c547beac6e46c91aa2868213, LIFE_TM_SEC=0, R=confidentmonumentsstayso@conference.rapat.space]@1691900389
+Jicofo 2022-06-08 08:17:36.500 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/zp_-haMXEGlz authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 08:17:36.512 INFO: [37] [room=confidentmonumentsstayso@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 08:17:36.513 INFO: [37] [room=confidentmonumentsstayso@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining confidentmonumentsstayso@conference.rapat.space
+Jicofo 2022-06-08 08:17:37.264 INFO: [30] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:d41d4a23
+Jicofo 2022-06-08 08:17:45.245 WARNING: [31] JibriIqHandler.handleRequest#65: Jibri IQ not accepted by any conference: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='confidentmonumentsstayso@conference.rapat.space/d41d4a23' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwBmODI1ZWM4MC0xNzY2LTRmOTUtOTY4YS03MGNhODEyZmNmODQ6c2VuZElRAO8N/FvwE/LJ' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 08:17:49.963 INFO: [18] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:d41d4a23
+Jicofo 2022-06-08 08:17:49.964 WARNING: [18] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for d41d4a23. Terminated already or never started?
+Jicofo 2022-06-08 08:17:49.964 INFO: [18] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 08:17:49.965 INFO: [18] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 08:17:49.966 INFO: [18] [room=confidentmonumentsstayso@conference.rapat.space meeting_id=e4c21edc-e871-486d-83c3-068c9c45d145] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 08:20:45.016 INFO: [31] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:20:45.017 INFO: [31] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:20:45.017 INFO: [33] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:20:45.018 WARNING: [57] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 08:20:45.020 SEVERE: [57] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 08:20:45.021 INFO: [57] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 08:20:46.023 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 11
+Jicofo 2022-06-08 08:20:47.024 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 10
+Jicofo 2022-06-08 08:20:48.024 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 9
+Jicofo 2022-06-08 08:20:49.024 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 8
+Jicofo 2022-06-08 08:20:50.025 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 7
+Jicofo 2022-06-08 08:20:51.025 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 6
+Jicofo 2022-06-08 08:20:52.025 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 5
+Jicofo 2022-06-08 08:20:53.026 INFO: [58] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 4
+Jicofo 2022-06-08 08:20:53.126 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 08:20:53.294 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 08:20:53.493 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 08:20:53.496 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 08:20:53.498 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 08:20:53.498 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 08:20:54.057 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 08:20:54.067 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 08:20:54.266 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 08:20:54.273 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 08:20:54.301 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 08:20:54.309 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 08:20:54.311 INFO: [1] JicofoServices.<init>#121: No Jibri detector configured.
+Jicofo 2022-06-08 08:20:54.311 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 08:20:54.319 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 08:20:54.393 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1248ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 08:20:54.468 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 08:20:54.558 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 08:20:54.744 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 08:20:54.748 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 08:20:54.818 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:20:54.835 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 08:20:54.850 WARNING: [30] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 08:20:54.851 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:20:54.876 INFO: [34] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:20:54.933 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 08:20:54.934 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 08:20:54.955 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 08:20:55.164 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@1ff15a50{/,null,AVAILABLE}
+Jicofo 2022-06-08 08:20:55.176 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@1686f0b4{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 08:20:55.176 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2033ms
+Jicofo 2022-06-08 08:21:02.012 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:21:02.012 INFO: [32] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:21:02.014 INFO: [34] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:21:08.122 INFO: [31] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:21:08.123 INFO: [31] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:21:08.125 INFO: [34] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:21:15.379 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:17.255 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:22.669 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:28.064 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:28.684 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:28.685 INFO: [37] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: 003eb9a2-8142-451a-bf25-9606382bfe17
+Jicofo 2022-06-08 08:21:28.685 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/1_V91YFrOyeL with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/1_V91YFrOyeL, SID=003eb9a2-8142-451a-bf25-9606382bfe17, MUID=2636ace7c547beac6e46c91aa2868213, LIFE_TM_SEC=0, R=cognitivepoliciessamplepainfully@conference.rapat.space]@517025086
+Jicofo 2022-06-08 08:21:28.686 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/1_V91YFrOyeL authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 08:21:28.699 INFO: [37] [room=cognitivepoliciessamplepainfully@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 08:21:28.700 INFO: [37] [room=cognitivepoliciessamplepainfully@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:29.424 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:21:29.425 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: uvggdrxs4q8pauc9wxdvucli@guest.rapat.space/GouvmVbWzF0M with session: AuthSession[ID=jeprikusworo@rapat.space, JID=uvggdrxs4q8pauc9wxdvucli@guest.rapat.space/GouvmVbWzF0M, SID=003eb9a2-8142-451a-bf25-9606382bfe17, MUID=2636ace7c547beac6e46c91aa2868213, LIFE_TM_SEC=0, R=cognitivepoliciessamplepainfully@conference.rapat.space]@517025086
+Jicofo 2022-06-08 08:21:29.425 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid uvggdrxs4q8pauc9wxdvucli@guest.rapat.space/GouvmVbWzF0M authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 08:21:29.758 INFO: [32] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:e2ecec97
+Jicofo 2022-06-08 08:22:01.285 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: cognitivepoliciessamplepainfully@conference.rapat.space
+Jicofo 2022-06-08 08:22:01.589 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:fdd55431
+Jicofo 2022-06-08 08:22:01.595 INFO: [37] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431
+Jicofo 2022-06-08 08:22:01.596 INFO: [43] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97
+Jicofo 2022-06-08 08:22:02.653 INFO: [43] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97 in 1057
+Jicofo 2022-06-08 08:22:02.653 INFO: [37] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431 in 1058
+Jicofo 2022-06-08 08:22:02.680 INFO: [43] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.allocate#249: Allocating for e2ecec97
+Jicofo 2022-06-08 08:22:02.684 INFO: [37] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.allocate#249: Allocating for fdd55431
+Jicofo 2022-06-08 08:22:02.713 INFO: [43] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: false
+Jicofo 2022-06-08 08:22:02.718 INFO: [37] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: true
+Jicofo 2022-06-08 08:22:03.739 INFO: [43] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079 participant=e2ecec97] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97
+Jicofo 2022-06-08 08:22:03.779 INFO: [37] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079 participant=fdd55431] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431
+Jicofo 2022-06-08 08:22:04.373 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97
+Jicofo 2022-06-08 08:22:04.387 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from e2ecec97: {cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97=[audio=[1773167832], video=[1124452984, 2142984747, 2290230537, 2764779946, 1796169359, 1186116883], groups=[FID[1124452984, 2142984747], SIM[1124452984, 2290230537, 2764779946], FID[2290230537, 1796169359], FID[2764779946, 1186116883]]]}
+Jicofo 2022-06-08 08:22:04.394 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97]@783584105 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@3dac22a0, sources={cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97=[audio=[1773167832], video=[1124452984, 2142984747, 2290230537, 2764779946, 1796169359, 1186116883], groups=[FID[1124452984, 2142984747], SIM[1124452984, 2290230537, 2764779946], FID[2290230537, 1796169359], FID[2764779946, 1186116883]]]}
+Jicofo 2022-06-08 08:22:04.741 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431
+Jicofo 2022-06-08 08:22:04.742 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from fdd55431: {cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431=[audio=[2415389169], video=[3607162907, 3377577806, 2963232930, 549166291, 1825485818, 4273573221], groups=[FID[3607162907, 3377577806], SIM[3607162907, 2963232930, 549166291], FID[2963232930, 1825485818], FID[549166291, 4273573221]]]}
+Jicofo 2022-06-08 08:22:04.742 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431]@1607711898 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@55e14bb, sources={cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431=[audio=[2415389169], video=[3607162907, 3377577806, 2963232930, 549166291, 1825485818, 4273573221], groups=[FID[3607162907, 3377577806], SIM[3607162907, 2963232930, 549166291], FID[2963232930, 1825485818], FID[549166291, 4273573221]]]}
+Jicofo 2022-06-08 08:22:04.751 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079 participant=fdd55431] Participant.sendQueuedRemoteSources#575: Sending a queued source-add, sources:{cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97=[audio=[1773167832], video=[1124452984, 2142984747], groups=[FID[1124452984, 2142984747]]]}
+Jicofo 2022-06-08 08:22:04.756 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431]@1607711898 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@5a390111, sources=null
+Jicofo 2022-06-08 08:22:04.825 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97]@783584105 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@4c807cec, sources=null
+Jicofo 2022-06-08 08:22:06.268 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431]@1607711898 with transport=null, sources={}
+Jicofo 2022-06-08 08:22:06.551 INFO: [33] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97]@783584105 with transport=null, sources={}
+Jicofo 2022-06-08 08:23:19.815 WARNING: [30] JibriIqHandler.handleRequest#65: Jibri IQ not accepted by any conference: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwAxOTI2MGZkOC00MzE0LTRjZmItYmZlYi0zN2M3OGQyMjcwNWY6c2VuZElRAIp3ztkB0tA8' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 08:23:45.697 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:fdd55431
+Jicofo 2022-06-08 08:23:45.698 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating fdd55431, reason: gone, send session-terminate: false
+Jicofo 2022-06-08 08:23:45.698 INFO: [30] AbstractOperationSetJingle.terminateSession#509: Terminate session: cognitivepoliciessamplepainfully@conference.rapat.space/fdd55431, reason: gone, send terminate: false
+Jicofo 2022-06-08 08:23:45.699 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant fdd55431 removed=true
+Jicofo 2022-06-08 08:23:45.699 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.removeParticipants#131: Removing participants: [fdd55431]
+Jicofo 2022-06-08 08:23:45.708 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.rescheduleSingleParticipantTimeout#1795: Scheduled single person timeout.
+Jicofo 2022-06-08 08:23:46.350 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97]@783584105 with transport=null, sources={cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97=[audio=[1773167832], video=[1124452984, 1186116883, 1796169359, 2142984747, 2290230537, 2764779946], groups=[FID[1124452984, 2142984747], SIM[1124452984, 2290230537, 2764779946], FID[2290230537, 1796169359], FID[2764779946, 1186116883]]]}
+Jicofo 2022-06-08 08:23:54.336 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:e2ecec97
+Jicofo 2022-06-08 08:23:54.337 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating e2ecec97, reason: gone, send session-terminate: false
+Jicofo 2022-06-08 08:23:54.337 INFO: [30] AbstractOperationSetJingle.terminateSession#509: Terminate session: cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97, reason: gone, send terminate: false
+Jicofo 2022-06-08 08:23:54.337 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.updateParticipant#432: Updating Participant[cognitivepoliciessamplepainfully@conference.rapat.space/e2ecec97]@783584105 with transport=null, sources={}
+Jicofo 2022-06-08 08:23:54.337 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant e2ecec97 removed=true
+Jicofo 2022-06-08 08:23:54.337 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.removeParticipants#131: Removing participants: [e2ecec97]
+Jicofo 2022-06-08 08:23:54.342 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.removeParticipantInfosBySession#154: Removing session with no remaining participants: Colibri2Session[bridge=f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, id=ebcd1286-16ea-421a-ad32-4d8d6ca18578]
+Jicofo 2022-06-08 08:23:54.344 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 08:23:54.347 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 08:23:54.351 INFO: [30] [room=cognitivepoliciessamplepainfully@conference.rapat.space meeting_id=2377a610-2168-4f01-adc8-2cb283792079] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 08:41:42.498 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:41:42.498 INFO: [32] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:41:42.498 INFO: [34] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:41:48.579 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:41:48.580 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:41:48.584 INFO: [34] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:43:34.704 INFO: [32] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:43:34.704 INFO: [32] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:43:34.706 INFO: [34] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:43:34.712 WARNING: [175] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 08:43:34.715 SEVERE: [175] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 08:43:34.718 INFO: [175] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 08:43:34.855 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 08:43:53.594 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 08:43:54.021 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 08:43:54.029 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 08:43:54.036 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 08:43:54.036 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 08:43:55.377 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 08:43:55.407 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 08:43:56.050 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 08:43:56.065 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 08:43:56.182 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 08:43:56.197 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 08:43:56.209 INFO: [1] JicofoServices.<init>#121: No Jibri detector configured.
+Jicofo 2022-06-08 08:43:56.211 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 08:43:56.229 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 08:43:56.621 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @3619ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 08:43:56.878 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 08:43:57.109 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 08:43:57.418 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 08:43:57.441 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 08:43:57.873 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 08:43:57.874 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 08:43:58.556 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 08:43:58.963 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 08:43:59.577 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@1ff15a50{/,null,AVAILABLE}
+Jicofo 2022-06-08 08:43:59.597 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@1686f0b4{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 08:43:59.602 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @6599ms
+Jicofo 2022-06-08 08:44:01.036 INFO: [34] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 08:44:01.060 WARNING: [34] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 08:44:01.077 INFO: [34] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 08:44:01.101 INFO: [35] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:09.372 WARNING: [201] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 09:11:09.374 SEVERE: [201] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 09:11:09.379 INFO: [201] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:11:09.390 INFO: [201] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:09.391 INFO: [201] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:09.392 INFO: [35] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:10.376 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 12
+Jicofo 2022-06-08 09:11:11.377 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 11
+Jicofo 2022-06-08 09:11:12.377 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 10
+Jicofo 2022-06-08 09:11:13.377 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 9
+Jicofo 2022-06-08 09:11:14.378 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 8
+Jicofo 2022-06-08 09:11:15.378 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 7
+Jicofo 2022-06-08 09:11:16.378 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 6
+Jicofo 2022-06-08 09:11:17.379 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 5
+Jicofo 2022-06-08 09:11:18.379 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 4
+Jicofo 2022-06-08 09:11:19.379 INFO: [202] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 3
+Jicofo 2022-06-08 09:11:19.765 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 09:11:19.932 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 09:11:20.147 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 09:11:20.149 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 09:11:20.152 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 09:11:20.152 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 09:11:20.701 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 09:11:20.710 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 09:11:20.925 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 09:11:20.930 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 09:11:20.962 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 09:11:20.971 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:11:21.167 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:11:21.168 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 09:11:21.174 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 09:11:21.178 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 09:11:21.236 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1453ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 09:11:21.321 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 09:11:21.334 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 09:11:21.339 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 09:11:21.395 INFO: [23] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:21.408 WARNING: [23] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 09:11:21.416 INFO: [23] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:21.436 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:21.474 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:11:21.506 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:11:21.508 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 09:11:21.685 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 09:11:21.804 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 09:11:22.050 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@364fd4ae{/,null,AVAILABLE}
+Jicofo 2022-06-08 09:11:22.063 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@5bb51241{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 09:11:22.064 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2282ms
+Jicofo 2022-06-08 09:11:31.838 INFO: [22] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:31.838 INFO: [22] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:31.839 INFO: [32] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:37.946 INFO: [18] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:11:37.947 INFO: [18] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:11:37.951 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:13:05.187 INFO: [45] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:10.973 INFO: [45] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:16.283 INFO: [45] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:16.284 INFO: [45] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: a56b18ef-6472-454f-b82e-ba29cbb16d81
+Jicofo 2022-06-08 09:13:16.285 INFO: [45] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/KG5dV74FUgWG with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/KG5dV74FUgWG, SID=a56b18ef-6472-454f-b82e-ba29cbb16d81, MUID=004d427f1d74ec73963b59164b82d581, LIFE_TM_SEC=0, R=123@conference.rapat.space]@1121337117
+Jicofo 2022-06-08 09:13:16.285 INFO: [45] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/KG5dV74FUgWG authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:13:16.298 INFO: [45] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 09:13:16.299 INFO: [45] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:16.318 INFO: [47] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:16.608 INFO: [23] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:c97b1012
+Jicofo 2022-06-08 09:13:17.055 INFO: [45] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:13:17.055 INFO: [45] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: yiqujinjqrfep7cr27czdeq7@guest.rapat.space/CdCUW2OG-7u_ with session: AuthSession[ID=jeprikusworo@rapat.space, JID=yiqujinjqrfep7cr27czdeq7@guest.rapat.space/CdCUW2OG-7u_, SID=a56b18ef-6472-454f-b82e-ba29cbb16d81, MUID=004d427f1d74ec73963b59164b82d581, LIFE_TM_SEC=0, R=123@conference.rapat.space]@1121337117
+Jicofo 2022-06-08 09:13:17.055 INFO: [45] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid yiqujinjqrfep7cr27czdeq7@guest.rapat.space/CdCUW2OG-7u_ authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:13:29.975 INFO: [22] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/c97b1012' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwBmMWNkNDYwNC0xNDkyLTQ2OTYtODYxMC1iY2E0N2IwMjBlOTI6c2VuZElRAIdsjksmL6Jr' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 09:13:29.979 SEVERE: [45] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 09:13:29.980 INFO: [45] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 09:13:37.314 INFO: [18] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:c97b1012
+Jicofo 2022-06-08 09:13:37.315 WARNING: [18] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for c97b1012. Terminated already or never started?
+Jicofo 2022-06-08 09:13:37.315 INFO: [18] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:13:37.316 INFO: [18] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:13:37.316 INFO: [18] [room=123@conference.rapat.space meeting_id=ded35f22-669e-44ba-b877-d768976c410e] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 09:17:44.036 WARNING: [76] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 09:17:44.039 SEVERE: [76] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 09:17:44.039 INFO: [76] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:17:44.040 INFO: [76] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:17:44.040 INFO: [76] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:17:44.040 INFO: [76] [type=jibri brewery=jibribrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:17:44.041 INFO: [32] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:17:45.041 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 13
+Jicofo 2022-06-08 09:17:46.041 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 12
+Jicofo 2022-06-08 09:17:47.042 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 11
+Jicofo 2022-06-08 09:17:48.042 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 10
+Jicofo 2022-06-08 09:17:49.042 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 9
+Jicofo 2022-06-08 09:17:50.043 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 8
+Jicofo 2022-06-08 09:17:51.043 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 7
+Jicofo 2022-06-08 09:17:52.043 INFO: [77] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 6
+Jicofo 2022-06-08 09:17:52.957 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 09:17:53.127 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 09:17:53.341 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 09:17:53.343 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 09:17:53.345 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 09:17:53.346 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 09:17:53.899 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 09:17:53.908 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 09:17:54.106 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 09:17:54.112 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 09:17:54.159 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 09:17:54.166 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:17:54.336 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:17:54.337 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 09:17:54.343 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 09:17:54.383 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 09:17:54.402 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1426ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 09:17:54.482 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 09:17:54.532 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 09:17:54.541 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 09:17:54.604 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:17:54.629 WARNING: [30] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 09:17:54.631 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:17:54.655 INFO: [35] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:17:54.750 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:17:54.853 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:17:54.855 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 09:17:54.929 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 09:17:55.017 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 09:17:55.270 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@1b57c345{/,null,AVAILABLE}
+Jicofo 2022-06-08 09:17:55.281 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@59e43e8c{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 09:17:55.281 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2307ms
+Jicofo 2022-06-08 09:18:03.044 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:18:03.044 INFO: [30] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:18:03.045 INFO: [35] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:18:09.185 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:18:09.186 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:18:09.189 INFO: [35] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:19:11.721 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:17.636 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:23.114 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:24.587 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:24.588 INFO: [44] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: d7301a78-5be1-405e-86ca-ec6b18956ea0
+Jicofo 2022-06-08 09:19:24.588 INFO: [44] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/OUHWq8SDNw9c with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/OUHWq8SDNw9c, SID=d7301a78-5be1-405e-86ca-ec6b18956ea0, MUID=60ca66e6e6e66196fd577af653fdf290, LIFE_TM_SEC=0, R=123@conference.rapat.space]@752224230
+Jicofo 2022-06-08 09:19:24.589 INFO: [44] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/OUHWq8SDNw9c authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:19:24.602 INFO: [44] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 09:19:24.602 INFO: [44] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:25.287 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:25.287 INFO: [44] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: 3nomacqx7w5zalhbzdmag4cj@guest.rapat.space/B5vZILib_971 with session: AuthSession[ID=jeprikusworo@rapat.space, JID=3nomacqx7w5zalhbzdmag4cj@guest.rapat.space/B5vZILib_971, SID=d7301a78-5be1-405e-86ca-ec6b18956ea0, MUID=60ca66e6e6e66196fd577af653fdf290, LIFE_TM_SEC=0, R=123@conference.rapat.space]@752224230
+Jicofo 2022-06-08 09:19:25.288 INFO: [44] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid 3nomacqx7w5zalhbzdmag4cj@guest.rapat.space/B5vZILib_971 authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:19:25.592 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:40216c54
+Jicofo 2022-06-08 09:19:52.639 INFO: [44] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:19:53.041 INFO: [34] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:5f15e1a4
+Jicofo 2022-06-08 09:19:53.045 INFO: [44] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for 123@conference.rapat.space/5f15e1a4
+Jicofo 2022-06-08 09:19:53.045 INFO: [49] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for 123@conference.rapat.space/40216c54
+Jicofo 2022-06-08 09:19:54.140 INFO: [44] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for 123@conference.rapat.space/5f15e1a4 in 1095
+Jicofo 2022-06-08 09:19:54.140 INFO: [49] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for 123@conference.rapat.space/40216c54 in 1095
+Jicofo 2022-06-08 09:19:54.166 INFO: [44] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.allocate#249: Allocating for 5f15e1a4
+Jicofo 2022-06-08 09:19:54.168 INFO: [49] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.allocate#249: Allocating for 40216c54
+Jicofo 2022-06-08 09:19:54.193 INFO: [44] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: false
+Jicofo 2022-06-08 09:19:54.199 INFO: [49] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: true
+Jicofo 2022-06-08 09:19:55.220 INFO: [44] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df participant=5f15e1a4] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: 123@conference.rapat.space/5f15e1a4
+Jicofo 2022-06-08 09:19:55.253 INFO: [49] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df participant=40216c54] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: 123@conference.rapat.space/40216c54
+Jicofo 2022-06-08 09:19:56.413 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from 123@conference.rapat.space/5f15e1a4
+Jicofo 2022-06-08 09:19:56.427 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from 5f15e1a4: {123@conference.rapat.space/5f15e1a4=[audio=[1940608162], video=[1788937154, 594700048, 2655947148, 3702899818, 874176750, 2631569641], groups=[FID[1788937154, 594700048], SIM[1788937154, 2655947148, 3702899818], FID[2655947148, 874176750], FID[3702899818, 2631569641]]]}
+Jicofo 2022-06-08 09:19:56.433 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/5f15e1a4]@1878678388 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@6f99fa4f, sources={123@conference.rapat.space/5f15e1a4=[audio=[1940608162], video=[1788937154, 594700048, 2655947148, 3702899818, 874176750, 2631569641], groups=[FID[1788937154, 594700048], SIM[1788937154, 2655947148, 3702899818], FID[2655947148, 874176750], FID[3702899818, 2631569641]]]}
+Jicofo 2022-06-08 09:19:56.443 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/5f15e1a4]@1878678388 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@661431d5, sources=null
+Jicofo 2022-06-08 09:19:56.493 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from 123@conference.rapat.space/40216c54
+Jicofo 2022-06-08 09:19:56.494 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from 40216c54: {123@conference.rapat.space/40216c54=[audio=[3120776597], video=[2978785103, 1424891999, 2886922739, 674506235, 2668952118, 447155547], groups=[FID[2978785103, 1424891999], SIM[2978785103, 2886922739, 674506235], FID[2886922739, 2668952118], FID[674506235, 447155547]]]}
+Jicofo 2022-06-08 09:19:56.494 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/40216c54]@207961762 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@1428ea7, sources={123@conference.rapat.space/40216c54=[audio=[3120776597], video=[2978785103, 1424891999, 2886922739, 674506235, 2668952118, 447155547], groups=[FID[2978785103, 1424891999], SIM[2978785103, 2886922739, 674506235], FID[2886922739, 2668952118], FID[674506235, 447155547]]]}
+Jicofo 2022-06-08 09:19:56.513 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df participant=40216c54] Participant.sendQueuedRemoteSources#575: Sending a queued source-add, sources:{123@conference.rapat.space/5f15e1a4=[audio=[1940608162], video=[1788937154, 594700048], groups=[FID[1788937154, 594700048]]]}
+Jicofo 2022-06-08 09:19:56.739 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/40216c54]@207961762 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@792fc0b1, sources=null
+Jicofo 2022-06-08 09:19:56.742 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/40216c54]@207961762 with transport=null, sources={}
+Jicofo 2022-06-08 09:19:57.093 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/5f15e1a4]@1878678388 with transport=null, sources={}
+Jicofo 2022-06-08 09:20:10.447 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/40216c54' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwAyOGQxM2E5YS1mNGJjLTRiNDMtODVkZS00ZDliMGQ3NzQzOTQ6c2VuZElRALpumVwgYPEm' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 09:20:10.451 SEVERE: [49] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 09:20:10.452 INFO: [49] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 09:20:22.137 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:40216c54
+Jicofo 2022-06-08 09:20:22.138 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating 40216c54, reason: gone, send session-terminate: false
+Jicofo 2022-06-08 09:20:22.138 INFO: [19] AbstractOperationSetJingle.terminateSession#509: Terminate session: 123@conference.rapat.space/40216c54, reason: gone, send terminate: false
+Jicofo 2022-06-08 09:20:22.138 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant 40216c54 removed=true
+Jicofo 2022-06-08 09:20:22.139 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.removeParticipants#131: Removing participants: [40216c54]
+Jicofo 2022-06-08 09:20:22.142 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.rescheduleSingleParticipantTimeout#1795: Scheduled single person timeout.
+Jicofo 2022-06-08 09:20:22.880 INFO: [19] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/5f15e1a4]@1878678388 with transport=null, sources={123@conference.rapat.space/5f15e1a4=[audio=[1940608162], video=[594700048, 874176750, 1788937154, 2631569641, 2655947148, 3702899818], groups=[FID[1788937154, 594700048], SIM[1788937154, 2655947148, 3702899818], FID[2655947148, 874176750], FID[3702899818, 2631569641]]]}
+Jicofo 2022-06-08 09:20:32.898 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:5f15e1a4
+Jicofo 2022-06-08 09:20:32.898 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating 5f15e1a4, reason: gone, send session-terminate: false
+Jicofo 2022-06-08 09:20:32.899 INFO: [33] AbstractOperationSetJingle.terminateSession#509: Terminate session: 123@conference.rapat.space/5f15e1a4, reason: gone, send terminate: false
+Jicofo 2022-06-08 09:20:32.899 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.updateParticipant#432: Updating Participant[123@conference.rapat.space/5f15e1a4]@1878678388 with transport=null, sources={}
+Jicofo 2022-06-08 09:20:32.899 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant 5f15e1a4 removed=true
+Jicofo 2022-06-08 09:20:32.899 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.removeParticipants#131: Removing participants: [5f15e1a4]
+Jicofo 2022-06-08 09:20:32.904 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.removeParticipantInfosBySession#154: Removing session with no remaining participants: Colibri2Session[bridge=f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, id=8c003b7a-852a-4b3b-a452-ed7a0c74ea0a]
+Jicofo 2022-06-08 09:20:32.905 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:20:32.906 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:20:32.912 INFO: [33] [room=123@conference.rapat.space meeting_id=3ac7c855-41f9-4970-8f54-2c3de89345df] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 09:23:31.908 WARNING: [74] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 09:23:31.911 SEVERE: [74] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 09:23:31.912 INFO: [74] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:23:31.912 INFO: [74] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:31.912 INFO: [74] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:31.912 INFO: [35] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:23:31.913 INFO: [74] [type=jibri brewery=jibribrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:23:32.912 INFO: [75] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 1
+Jicofo 2022-06-08 09:23:33.912 INFO: [75] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 0
+Jicofo 2022-06-08 09:23:33.912 INFO: [75] [xmpp_connection=client] XmppProviderImpl$XmppReConnectionListener.reconnectingIn#400: XMPP reconnecting in: 0
+Jicofo 2022-06-08 09:23:34.018 INFO: [75] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 09:23:34.020 INFO: [75] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 09:23:34.037 INFO: [75] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:23:34.056 INFO: [75] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:23:34.056 INFO: [75] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 09:23:37.025 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 09:23:37.180 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 09:23:37.362 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 09:23:37.364 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 09:23:37.366 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 09:23:37.366 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 09:23:37.917 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 09:23:37.928 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 09:23:38.142 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 09:23:38.147 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 09:23:38.182 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 09:23:38.193 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:23:38.375 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:23:38.376 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 09:23:38.382 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 09:23:38.431 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 09:23:38.442 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @1400ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 09:23:38.521 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 09:23:38.600 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 09:23:38.605 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 09:23:38.705 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:23:38.736 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:23:38.738 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 09:23:38.892 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 09:23:38.983 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 09:23:39.232 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@21ea996f{/,null,AVAILABLE}
+Jicofo 2022-06-08 09:23:39.243 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@46c3a14d{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 09:23:39.243 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @2203ms
+Jicofo 2022-06-08 09:23:39.862 INFO: [31] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:39.873 WARNING: [31] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 09:23:39.874 INFO: [31] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:23:39.879 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:23:45.222 INFO: [18] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:45.225 INFO: [18] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:45.226 INFO: [32] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:23:51.304 INFO: [30] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:23:51.306 INFO: [30] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:23:51.309 INFO: [32] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:24:11.176 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:16.923 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:22.506 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:24.113 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:24.114 INFO: [37] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: 90f8385a-6097-44c0-8233-cc6c640321cf
+Jicofo 2022-06-08 09:24:24.114 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/QzHLlcDharYI with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/QzHLlcDharYI, SID=90f8385a-6097-44c0-8233-cc6c640321cf, MUID=752f3b279bf0414fc3c948f2ab1d3d40, LIFE_TM_SEC=0, R=123@conference.rapat.space]@253000488
+Jicofo 2022-06-08 09:24:24.115 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/QzHLlcDharYI authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:24:24.129 INFO: [37] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 09:24:24.130 INFO: [37] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:24.793 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:24:24.793 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: f8wpv3m5hsksrxyz1bgiyu2d@guest.rapat.space/3PlkbcSdAM9r with session: AuthSession[ID=jeprikusworo@rapat.space, JID=f8wpv3m5hsksrxyz1bgiyu2d@guest.rapat.space/3PlkbcSdAM9r, SID=90f8385a-6097-44c0-8233-cc6c640321cf, MUID=752f3b279bf0414fc3c948f2ab1d3d40, LIFE_TM_SEC=0, R=123@conference.rapat.space]@253000488
+Jicofo 2022-06-08 09:24:24.794 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid f8wpv3m5hsksrxyz1bgiyu2d@guest.rapat.space/3PlkbcSdAM9r authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:24:25.085 INFO: [18] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:9120b739
+Jicofo 2022-06-08 09:24:36.956 INFO: [18] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/9120b739' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwBmMjQ4YTUwYy0yNjM0LTRkYjgtYTliYS0xMmUzYjg4OGQ2MjY6c2VuZElRAFnKTwxAq+hx' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 09:24:36.961 SEVERE: [37] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 09:24:36.962 INFO: [37] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 09:25:44.733 INFO: [30] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:9120b739
+Jicofo 2022-06-08 09:25:44.733 WARNING: [30] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 9120b739. Terminated already or never started?
+Jicofo 2022-06-08 09:25:44.734 INFO: [30] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:25:44.735 INFO: [30] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:25:44.735 INFO: [30] [room=123@conference.rapat.space meeting_id=b24a2af3-fc59-471a-9d62-457d8630b3d4] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 09:41:52.531 INFO: [146] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: ksp@conference.rapat.space
+Jicofo 2022-06-08 09:41:52.532 INFO: [146] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: kmaz8lycoyi8s1bt0v-6jyvt@guest.rapat.space/AETs4PYvaN2T with session: AuthSession[ID=jeprikusworo@rapat.space, JID=kmaz8lycoyi8s1bt0v-6jyvt@guest.rapat.space/AETs4PYvaN2T, SID=90f8385a-6097-44c0-8233-cc6c640321cf, MUID=752f3b279bf0414fc3c948f2ab1d3d40, LIFE_TM_SEC=1047, R=123@conference.rapat.space]@253000488
+Jicofo 2022-06-08 09:41:52.532 INFO: [146] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid kmaz8lycoyi8s1bt0v-6jyvt@guest.rapat.space/AETs4PYvaN2T authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:41:52.532 INFO: [146] [room=ksp@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 09:41:52.533 INFO: [146] [room=ksp@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining ksp@conference.rapat.space
+Jicofo 2022-06-08 09:41:53.226 INFO: [34] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:16cb5c34
+Jicofo 2022-06-08 09:42:01.840 INFO: [30] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='ksp@conference.rapat.space/16cb5c34' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA5NjViZDY4NS02Y2VkLTQ4M2UtYTRmNy1jYzMzMWFmYTA2Njg6c2VuZElRAAO+uRExB9M1' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 09:42:01.840 SEVERE: [146] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 09:42:01.841 INFO: [146] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 09:42:09.977 INFO: [31] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:16cb5c34
+Jicofo 2022-06-08 09:42:09.978 WARNING: [31] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 16cb5c34. Terminated already or never started?
+Jicofo 2022-06-08 09:42:09.978 INFO: [31] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:42:09.978 INFO: [31] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:42:09.979 INFO: [31] [room=ksp@conference.rapat.space meeting_id=bcc6d9cf-e0fb-4cf4-9145-0bdf5258fc99] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 09:42:37.913 WARNING: [151] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 09:42:37.933 SEVERE: [151] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 09:42:37.934 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 09:42:37.937 INFO: [151] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 09:42:37.937 INFO: [151] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:42:37.938 INFO: [151] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:42:37.938 INFO: [32] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:42:37.940 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStop: Stopped ServerConnector@46c3a14d{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 09:42:38.096 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 09:42:38.455 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 09:42:38.457 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 09:42:38.459 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 09:42:38.460 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 09:42:39.399 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 09:42:39.413 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 09:42:39.775 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 09:42:39.799 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 09:42:39.886 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 09:42:39.912 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:42:40.315 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 09:42:40.328 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 09:42:40.396 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 09:42:40.405 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 09:42:40.599 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @2655ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 09:42:40.649 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 09:42:40.666 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 09:42:40.838 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 09:42:40.859 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:42:41.001 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 09:42:41.003 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 09:42:41.399 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 09:42:41.640 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 09:42:41.985 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@245253d8{/,null,AVAILABLE}
+Jicofo 2022-06-08 09:42:42.029 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@5bb51241{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 09:42:42.029 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @4091ms
+Jicofo 2022-06-08 09:42:45.404 INFO: [22] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 09:42:45.417 WARNING: [22] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 09:42:45.418 INFO: [22] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:42:45.423 INFO: [33] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 09:50:08.425 INFO: [81] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:14.193 INFO: [81] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:19.521 INFO: [81] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:19.538 INFO: [81] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:19.539 INFO: [81] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: a95f3830-77ec-4c24-a645-749acc8dda53
+Jicofo 2022-06-08 09:50:19.539 INFO: [81] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/7afIDrloBm79 with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/7afIDrloBm79, SID=a95f3830-77ec-4c24-a645-749acc8dda53, MUID=1940fae32ddb5261826fe96d69b9838c, LIFE_TM_SEC=0, R=123@conference.rapat.space]@1664157713
+Jicofo 2022-06-08 09:50:19.539 INFO: [81] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/7afIDrloBm79 authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:50:19.551 INFO: [81] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 09:50:19.551 INFO: [81] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:20.242 INFO: [81] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 09:50:20.243 INFO: [81] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: -ia0se2a_t4xxa5zsfsszx0a@guest.rapat.space/ZjI8pBJbrbpb with session: AuthSession[ID=jeprikusworo@rapat.space, JID=-ia0se2a_t4xxa5zsfsszx0a@guest.rapat.space/ZjI8pBJbrbpb, SID=a95f3830-77ec-4c24-a645-749acc8dda53, MUID=1940fae32ddb5261826fe96d69b9838c, LIFE_TM_SEC=0, R=123@conference.rapat.space]@1664157713
+Jicofo 2022-06-08 09:50:20.243 INFO: [81] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid -ia0se2a_t4xxa5zsfsszx0a@guest.rapat.space/ZjI8pBJbrbpb authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 09:50:20.545 INFO: [19] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:5a071460
+Jicofo 2022-06-08 09:50:29.483 INFO: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/5a071460' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA0YmJjNTYwYy1lZDBhLTQxY2EtYTUyNS0yMWY1ZGFhN2RiM2E6c2VuZElRACknHawQkbN6' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 09:50:29.487 SEVERE: [81] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 09:50:29.487 INFO: [81] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 09:50:38.552 INFO: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:5a071460
+Jicofo 2022-06-08 09:50:38.553 WARNING: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 5a071460. Terminated already or never started?
+Jicofo 2022-06-08 09:50:38.553 INFO: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:50:38.554 INFO: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 09:50:38.555 INFO: [52] [room=123@conference.rapat.space meeting_id=7189bed7-6ad9-4956-8aee-d8cfd49aadac] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 10:08:25.003 INFO: [131] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:08:25.004 INFO: [131] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:08:25.004 WARNING: [194] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 10:08:25.007 INFO: [33] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:08:25.007 SEVERE: [194] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 10:08:25.008 INFO: [194] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 10:08:25.009 INFO: [194] [type=jibri brewery=jibribrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 10:08:25.222 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 10:08:25.450 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 10:08:25.453 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 10:08:25.455 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 10:08:25.456 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 10:08:26.261 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 10:08:26.271 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 10:08:26.586 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 10:08:26.593 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 10:08:26.676 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 10:08:26.703 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 10:08:27.143 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 10:08:27.145 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 10:08:27.153 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 10:08:27.170 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 10:08:27.362 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @2315ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 10:08:27.490 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 10:08:27.497 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 10:08:27.675 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 10:08:27.741 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 10:08:27.770 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 10:08:27.772 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 10:08:28.214 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 10:08:28.387 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 10:08:28.798 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3b481bf5{/,null,AVAILABLE}
+Jicofo 2022-06-08 10:08:28.821 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@70f822e{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 10:08:28.821 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @3776ms
+Jicofo 2022-06-08 10:08:32.312 INFO: [18] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:08:32.326 WARNING: [18] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 10:08:32.328 INFO: [18] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:08:32.331 INFO: [34] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:20:49.499 WARNING: [110] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 10:20:49.501 SEVERE: [110] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 10:20:49.502 INFO: [110] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 10:20:49.503 INFO: [110] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:20:49.503 INFO: [110] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:20:49.504 INFO: [110] [type=jibri brewery=jibribrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 10:20:49.505 INFO: [34] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:20:49.521 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 10:20:49.734 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 10:20:50.033 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 10:20:50.035 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 10:20:50.038 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 10:20:50.039 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 10:20:50.955 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 10:20:50.984 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 10:20:51.333 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 10:20:51.352 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 10:20:51.455 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 10:20:51.503 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 10:20:51.885 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 10:20:51.890 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 10:20:51.907 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 10:20:51.917 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 10:20:52.078 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @2533ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 10:20:52.252 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 10:20:52.255 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 10:20:52.260 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 10:20:52.489 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 10:20:52.613 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 10:20:52.622 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 10:20:52.895 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 10:20:53.028 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 10:20:53.601 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@3b481bf5{/,null,AVAILABLE}
+Jicofo 2022-06-08 10:20:53.645 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@70f822e{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 10:20:53.649 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @4106ms
+Jicofo 2022-06-08 10:20:57.049 INFO: [19] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 10:20:57.060 WARNING: [19] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 10:20:57.066 INFO: [19] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:20:57.070 INFO: [34] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 10:21:14.251 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:20.110 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:24.932 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:24.933 INFO: [37] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: 7052741f-5a8d-404a-a74b-f3710f2954f5
+Jicofo 2022-06-08 10:21:24.933 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/sDbXk0kCQ5XF with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/sDbXk0kCQ5XF, SID=7052741f-5a8d-404a-a74b-f3710f2954f5, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=0, R=kjdsfjkd@conference.rapat.space]@1919437740
+Jicofo 2022-06-08 10:21:24.934 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/sDbXk0kCQ5XF authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 10:21:24.947 INFO: [37] [room=kjdsfjkd@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 10:21:24.948 INFO: [37] [room=kjdsfjkd@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:25.442 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:25.725 INFO: [37] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:21:25.725 INFO: [37] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: 1ak-vv-zxmtx02gkgvpgoyns@guest.rapat.space/-nFQ1us6jpwp with session: AuthSession[ID=jeprikusworo@rapat.space, JID=1ak-vv-zxmtx02gkgvpgoyns@guest.rapat.space/-nFQ1us6jpwp, SID=7052741f-5a8d-404a-a74b-f3710f2954f5, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=0, R=kjdsfjkd@conference.rapat.space]@1919437740
+Jicofo 2022-06-08 10:21:25.726 INFO: [37] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid 1ak-vv-zxmtx02gkgvpgoyns@guest.rapat.space/-nFQ1us6jpwp authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 10:21:25.740 INFO: [22] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:35b01da4
+Jicofo 2022-06-08 10:21:36.935 INFO: [19] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='kjdsfjkd@conference.rapat.space/35b01da4' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA4YjRjMjMzYS04ZDhkLTQ1ZjAtOTI5Mi00MTRhMzM2OTFhYzY6c2VuZElRAF9mKiJH8gaF' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 10:21:36.941 SEVERE: [37] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 10:21:36.941 INFO: [37] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 10:24:05.399 INFO: [56] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: kjdsfjkd@conference.rapat.space
+Jicofo 2022-06-08 10:24:06.093 INFO: [22] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:acb15efc
+Jicofo 2022-06-08 10:24:06.097 INFO: [56] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for kjdsfjkd@conference.rapat.space/35b01da4
+Jicofo 2022-06-08 10:24:06.097 INFO: [57] DiscoveryUtil.discoverParticipantFeatures#147: Doing feature discovery for kjdsfjkd@conference.rapat.space/acb15efc
+Jicofo 2022-06-08 10:24:08.561 INFO: [57] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for kjdsfjkd@conference.rapat.space/acb15efc in 2464
+Jicofo 2022-06-08 10:24:08.561 INFO: [56] DiscoveryUtil.discoverParticipantFeatures#187: Successfully discovered features for kjdsfjkd@conference.rapat.space/35b01da4 in 2464
+Jicofo 2022-06-08 10:24:08.585 INFO: [56] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.allocate#249: Allocating for 35b01da4
+Jicofo 2022-06-08 10:24:08.588 INFO: [57] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.allocate#249: Allocating for acb15efc
+Jicofo 2022-06-08 10:24:08.615 INFO: [56] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: false
+Jicofo 2022-06-08 10:24:08.620 INFO: [57] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.allocate#274: Selected f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, session exists: true
+Jicofo 2022-06-08 10:24:09.620 INFO: [56] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67 participant=35b01da4] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: kjdsfjkd@conference.rapat.space/35b01da4
+Jicofo 2022-06-08 10:24:09.639 INFO: [57] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67 participant=acb15efc] ParticipantInviteRunnable.doInviteOrReinvite#435: Sending session-initiate to: kjdsfjkd@conference.rapat.space/acb15efc
+Jicofo 2022-06-08 10:24:10.854 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from kjdsfjkd@conference.rapat.space/35b01da4
+Jicofo 2022-06-08 10:24:10.866 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from 35b01da4: {kjdsfjkd@conference.rapat.space/35b01da4=[audio=[2439764254], video=[641259790, 658017780, 3901580857, 4114285679, 2341152044, 3186270086], groups=[FID[641259790, 658017780], SIM[641259790, 3901580857, 4114285679], FID[3901580857, 2341152044], FID[4114285679, 3186270086]]]}
+Jicofo 2022-06-08 10:24:10.872 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/35b01da4]@337304064 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@7f47bd76, sources={kjdsfjkd@conference.rapat.space/35b01da4=[audio=[2439764254], video=[641259790, 658017780, 3901580857, 4114285679, 2341152044, 3186270086], groups=[FID[641259790, 658017780], SIM[641259790, 3901580857, 4114285679], FID[3901580857, 2341152044], FID[4114285679, 3186270086]]]}
+Jicofo 2022-06-08 10:24:10.976 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onSessionAccept#926: Receive session-accept from kjdsfjkd@conference.rapat.space/acb15efc
+Jicofo 2022-06-08 10:24:10.977 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onSessionAcceptInternal#1281: Accepted initial sources from acb15efc: {kjdsfjkd@conference.rapat.space/acb15efc=[audio=[2406590936], video=[3949505241, 3615218788, 3087066705, 2087616261, 1684059968, 2549732640], groups=[FID[3949505241, 3615218788], SIM[3949505241, 3087066705, 2087616261], FID[3087066705, 1684059968], FID[2087616261, 2549732640]]]}
+Jicofo 2022-06-08 10:24:10.977 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/acb15efc]@1772325458 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@44fcaaa9, sources={kjdsfjkd@conference.rapat.space/acb15efc=[audio=[2406590936], video=[3949505241, 3615218788, 3087066705, 2087616261, 1684059968, 2549732640], groups=[FID[3949505241, 3615218788], SIM[3949505241, 3087066705, 2087616261], FID[3087066705, 1684059968], FID[2087616261, 2549732640]]]}
+Jicofo 2022-06-08 10:24:10.990 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67 participant=acb15efc] Participant.sendQueuedRemoteSources#575: Sending a queued source-add, sources:{kjdsfjkd@conference.rapat.space/35b01da4=[audio=[2439764254], video=[641259790, 658017780], groups=[FID[641259790, 658017780]]]}
+Jicofo 2022-06-08 10:24:10.992 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/acb15efc]@1772325458 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@efc6edc, sources=null
+Jicofo 2022-06-08 10:24:11.036 INFO: [22] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/35b01da4]@337304064 with transport=org.jitsi.xmpp.extensions.jingle.IceUdpTransportPacketExtension@776b0f48, sources=null
+Jicofo 2022-06-08 10:24:11.547 INFO: [45] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/35b01da4]@337304064 with transport=null, sources={}
+Jicofo 2022-06-08 10:24:12.169 INFO: [22] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/acb15efc]@1772325458 with transport=null, sources={}
+Jicofo 2022-06-08 10:26:16.033 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:acb15efc
+Jicofo 2022-06-08 10:26:16.033 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating acb15efc, reason: gone, send session-terminate: false
+Jicofo 2022-06-08 10:26:16.034 INFO: [68] AbstractOperationSetJingle.terminateSession#509: Terminate session: kjdsfjkd@conference.rapat.space/acb15efc, reason: gone, send terminate: false
+Jicofo 2022-06-08 10:26:16.034 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant acb15efc removed=true
+Jicofo 2022-06-08 10:26:16.035 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.removeParticipants#131: Removing participants: [acb15efc]
+Jicofo 2022-06-08 10:26:16.038 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.rescheduleSingleParticipantTimeout#1795: Scheduled single person timeout.
+Jicofo 2022-06-08 10:26:16.711 INFO: [68] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/35b01da4]@337304064 with transport=null, sources={kjdsfjkd@conference.rapat.space/35b01da4=[audio=[2439764254], video=[641259790, 658017780, 2341152044, 3186270086, 3901580857, 4114285679], groups=[FID[641259790, 658017780], SIM[641259790, 3901580857, 4114285679], FID[3901580857, 2341152044], FID[4114285679, 3186270086]]]}
+Jicofo 2022-06-08 10:26:36.038 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl$SinglePersonTimeout.run#1930: Timing out single participant: 35b01da4
+Jicofo 2022-06-08 10:26:36.038 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.terminateParticipant#827: Terminating 35b01da4, reason: expired, send session-terminate: true
+Jicofo 2022-06-08 10:26:36.039 INFO: [43] AbstractOperationSetJingle.terminateSession#509: Terminate session: kjdsfjkd@conference.rapat.space/35b01da4, reason: expired, send terminate: true
+Jicofo 2022-06-08 10:26:36.040 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.updateParticipant#432: Updating Participant[kjdsfjkd@conference.rapat.space/35b01da4]@337304064 with transport=null, sources={}
+Jicofo 2022-06-08 10:26:36.040 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.terminateParticipant#850: Removed participant 35b01da4 removed=true
+Jicofo 2022-06-08 10:26:36.040 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.removeParticipants#131: Removing participants: [35b01da4]
+Jicofo 2022-06-08 10:26:36.045 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.removeParticipantInfosBySession#154: Removing session with no remaining participants: Colibri2Session[bridge=f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, id=b3ae5067-3e15-443a-a364-ae3c00a0186a]
+Jicofo 2022-06-08 10:26:36.045 INFO: [43] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 10:36:55.951 INFO: [126] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:35b01da4
+Jicofo 2022-06-08 10:36:55.951 WARNING: [126] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 35b01da4. Terminated already or never started?
+Jicofo 2022-06-08 10:36:55.951 INFO: [126] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 10:36:55.951 INFO: [126] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 10:36:55.952 INFO: [126] [room=kjdsfjkd@conference.rapat.space meeting_id=b53db7cd-21d4-4100-a50d-8b4397a3cb67] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 20:40:51.118 INFO: [280] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 20:40:51.119 INFO: [280] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: tt9qqphszlihikeoynhtwzm5@guest.rapat.space/ZrfsCRrUQY7L with session: AuthSession[ID=jeprikusworo@rapat.space, JID=tt9qqphszlihikeoynhtwzm5@guest.rapat.space/ZrfsCRrUQY7L, SID=7052741f-5a8d-404a-a74b-f3710f2954f5, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=37165, R=kjdsfjkd@conference.rapat.space]@1919437740
+Jicofo 2022-06-08 20:40:51.119 INFO: [280] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid tt9qqphszlihikeoynhtwzm5@guest.rapat.space/ZrfsCRrUQY7L authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 20:40:51.119 INFO: [280] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 20:40:51.120 INFO: [280] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 20:40:51.449 INFO: [281] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:43f1b7b6
+Jicofo 2022-06-08 20:41:00.543 INFO: [281] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/43f1b7b6' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA2MGZkZWVlYy0wZTQxLTQ5MTgtYmRiMy01MmQzOGUyOWU4ZmI6c2VuZElRADlucxrVS86F' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 20:41:00.543 SEVERE: [280] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 20:41:00.544 INFO: [280] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 20:41:06.928 INFO: [274] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:43f1b7b6
+Jicofo 2022-06-08 20:41:06.928 WARNING: [274] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 43f1b7b6. Terminated already or never started?
+Jicofo 2022-06-08 20:41:06.928 INFO: [274] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 20:41:06.929 INFO: [274] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 20:41:06.930 INFO: [274] [room=123@conference.rapat.space meeting_id=42427f87-2729-4304-b789-0bf745988956] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 21:38:36.314 INFO: [282] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:38:36.314 INFO: [282] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: q-k7amtvpt5w-7eeglm2w8fm@guest.rapat.space/Qd7QHG3cmFfD with session: AuthSession[ID=jeprikusworo@rapat.space, JID=q-k7amtvpt5w-7eeglm2w8fm@guest.rapat.space/Qd7QHG3cmFfD, SID=7052741f-5a8d-404a-a74b-f3710f2954f5, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=3465, R=kjdsfjkd@conference.rapat.space]@1919437740
+Jicofo 2022-06-08 21:38:36.314 INFO: [282] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid q-k7amtvpt5w-7eeglm2w8fm@guest.rapat.space/Qd7QHG3cmFfD authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 21:38:36.315 INFO: [282] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 21:38:36.315 INFO: [282] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 21:38:37.020 INFO: [279] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:847f2265
+Jicofo 2022-06-08 21:38:59.116 INFO: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/847f2265' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwAxODVkNzA2Mi00ZjhjLTQzMjEtYjUyZS0xNzljNGRlOWEzZjM6c2VuZElRAGaJa1otZEuG' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 21:38:59.117 SEVERE: [282] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 21:38:59.117 INFO: [282] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 21:39:01.526 INFO: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:847f2265
+Jicofo 2022-06-08 21:39:01.527 WARNING: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for 847f2265. Terminated already or never started?
+Jicofo 2022-06-08 21:39:01.527 INFO: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:39:01.527 INFO: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:39:01.528 INFO: [283] [room=123@conference.rapat.space meeting_id=7d5d3300-a3c3-4456-b2a1-c77a0a3f8168] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 21:40:35.639 INFO: [284] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:40:35.639 INFO: [284] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: pr9nd-z5ixna-ldkhinf7tha@guest.rapat.space/3aejBYkybXkM with session: AuthSession[ID=jeprikusworo@rapat.space, JID=pr9nd-z5ixna-ldkhinf7tha@guest.rapat.space/3aejBYkybXkM, SID=7052741f-5a8d-404a-a74b-f3710f2954f5, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=119, R=kjdsfjkd@conference.rapat.space]@1919437740
+Jicofo 2022-06-08 21:40:35.639 INFO: [284] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid pr9nd-z5ixna-ldkhinf7tha@guest.rapat.space/3aejBYkybXkM authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 21:40:35.639 INFO: [284] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 21:40:35.639 INFO: [284] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 21:40:36.349 INFO: [283] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:b5127b99
+Jicofo 2022-06-08 21:40:55.446 INFO: [283] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/b5127b99' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA4MTYzNDQ5NC0xODUzLTQ4YjktYjVlMi00ZmU1NWY3MmI0MGE6c2VuZElRAIEvN3kBJV64' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 21:40:55.447 SEVERE: [284] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 21:40:55.447 INFO: [284] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 21:41:00.609 INFO: [279] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:b5127b99
+Jicofo 2022-06-08 21:41:00.609 WARNING: [279] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for b5127b99. Terminated already or never started?
+Jicofo 2022-06-08 21:41:00.609 INFO: [279] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:41:00.610 INFO: [279] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:41:00.610 INFO: [279] [room=123@conference.rapat.space meeting_id=a8b6d454-a4f4-4877-bdd5-b75cc30f49e4] JitsiMeetConferenceImpl.stop#429: Stopped.
+Jicofo 2022-06-08 21:53:51.053 WARNING: [285] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener: Connection XMPPTCPConnection[focus@auth.rapat.space/focus] (0) closed with error
+org.jivesoftware.smack.XMPPException$StreamErrorException: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:981)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$700(XMPPTCPConnection.java:913)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:936)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Jicofo 2022-06-08 21:53:51.054 SEVERE: [285] [xmpp_connection=client] XmppProviderImpl$XmppConnectionListener.connectionClosedOnError#380: XMPP connection closed on error: system-shutdown You can read more about the meaning of this stream error at http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions
+<stream:error><system-shutdown xmlns='urn:ietf:params:xml:ns:xmpp-streams'/><text>Received SIGTERM</text></stream:error>
+Jicofo 2022-06-08 21:53:51.055 INFO: [285] [type=bridge brewery=jvbbrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 21:53:51.055 INFO: [285] [type=bridge brewery=jvbbrewery] BaseBrewery.removeInstance#353: Removed brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 21:53:51.056 INFO: [285] BridgeSelector.removeJvbAddress#111: Removing JVB: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 21:53:51.056 INFO: [285] [type=jibri brewery=jibribrewery] BaseBrewery.stop#198: Left the room.
+Jicofo 2022-06-08 21:53:51.056 INFO: [34] JvbDoctor.bridgeRemoved#102: Stopping health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 21:53:51.078 INFO: [1] Main.main#80: Stopping services.
+Jicofo 2022-06-08 21:53:51.283 INFO: [1] Main.main#49: Starting Jicofo.
+Jicofo 2022-06-08 21:53:51.558 INFO: [1] JitsiConfig.<clinit>#47: Initialized newConfig: merge of /etc/jitsi/jicofo/jicofo.conf: 1,system properties,reference.conf @ jar:file:/usr/share/jicofo/jicofo.jar!/reference.conf: 1
+Jicofo 2022-06-08 21:53:51.560 INFO: [1] ReadOnlyConfigurationService.reloadConfiguration#51: loading config file at path /etc/jitsi/jicofo/sip-communicator.properties
+Jicofo 2022-06-08 21:53:51.562 INFO: [1] JitsiConfig.<clinit>#68: Initialized legacyConfig: sip communicator props (no description provided)
+Jicofo 2022-06-08 21:53:51.562 INFO: [1] JitsiConfig$Companion.reloadNewConfig#94: Reloading the Typesafe config source (previously reloaded 0 times).
+Jicofo 2022-06-08 21:53:52.362 INFO: [1] JicofoServices.createAuthenticationAuthority#177: Starting authentication service with config=AuthConfig[enabled=true, type=XMPP, loginUrl=rapat.space, logoutUrl=null, authenticationLifetime=PT24H, enableAutoLogin=true].
+Jicofo 2022-06-08 21:53:52.374 INFO: [1] AbstractAuthAuthority.<init>#112: Authentication lifetime: PT24H
+Jicofo 2022-06-08 21:53:52.765 INFO: [1] XmppServices.<init>#48: No dedicated Service XMPP connection configured, re-using the client XMPP connection.
+Jicofo 2022-06-08 21:53:52.796 INFO: [1] XmppServices.<init>#63: No Jigasi detector configured.
+Jicofo 2022-06-08 21:53:52.849 INFO: [1] BridgeSelector.<init>#57: Using org.jitsi.jicofo.bridge.SingleBridgeSelectionStrategy
+Jicofo 2022-06-08 21:53:52.866 INFO: [1] [type=bridge brewery=jvbbrewery] BaseBrewery.<init>#100: Initialized with JID=jvbbrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 21:53:53.275 INFO: [1] [type=jibri brewery=jibribrewery] BaseBrewery.<init>#100: Initialized with JID=jibribrewery@internal.auth.rapat.space
+Jicofo 2022-06-08 21:53:53.281 INFO: [1] JicofoServices.<init>#127: No SIP Jibri detector configured.
+Jicofo 2022-06-08 21:53:53.290 INFO: [1] JicofoServices.<init>#142: Starting HTTP server with config: host=null, port=8888, tlsPort=8843, isTls=false, keyStorePath=null, sendServerVersion=true.
+Jicofo 2022-06-08 21:53:53.327 INFO: [17] [xmpp_connection=client] XmppProviderImpl.doConnect#209: Connected, JID=null
+Jicofo 2022-06-08 21:53:53.402 INFO: [1] org.eclipse.jetty.util.log.Log.initialized: Logging initialized @2303ms to org.eclipse.jetty.util.log.Slf4jLog
+Jicofo 2022-06-08 21:53:53.587 INFO: [1] org.eclipse.jetty.server.Server.doStart: jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 11.0.15+10-post-Debian-1deb10u1
+Jicofo 2022-06-08 21:53:53.608 INFO: [17] AvModerationHandler.registrationChanged#120: Discovered av_moderation component at avmoderation.rapat.space.
+Jicofo 2022-06-08 21:53:53.619 INFO: [17] ConferenceIqHandler.registrationChanged#183: Using breakout room component address: breakout.rapat.space
+Jicofo 2022-06-08 21:53:53.884 INFO: [17] [type=bridge brewery=jvbbrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 21:53:53.946 INFO: [17] [type=jibri brewery=jibribrewery] BaseBrewery.start#171: Joined the room.
+Jicofo 2022-06-08 21:53:53.950 INFO: [17] [xmpp_connection=client] XmppProviderImpl.fireRegistrationStateChanged#314: Set replyTimeout=PT15S
+Jicofo 2022-06-08 21:53:54.321 WARNING: [1] org.glassfish.jersey.server.wadl.WadlFeature.configure: JAXBContext implementation could not be found. WADL feature is disabled.
+Jicofo 2022-06-08 21:53:54.602 WARNING: [1] org.glassfish.jersey.internal.inject.Providers.checkProviderRuntime: A provider org.jitsi.rest.Version registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider org.jitsi.rest.Version will be ignored. 
+Jicofo 2022-06-08 21:53:54.975 INFO: [1] org.eclipse.jetty.server.handler.ContextHandler.doStart: Started o.e.j.s.ServletContextHandler@245253d8{/,null,AVAILABLE}
+Jicofo 2022-06-08 21:53:54.985 INFO: [1] org.eclipse.jetty.server.AbstractConnector.doStart: Started ServerConnector@5bb51241{HTTP/1.1, (http/1.1)}{0.0.0.0:8888}
+Jicofo 2022-06-08 21:53:54.986 INFO: [1] org.eclipse.jetty.server.Server.doStart: Started @3890ms
+Jicofo 2022-06-08 21:53:58.150 INFO: [22] [type=bridge brewery=jvbbrewery] BaseBrewery.addInstance#341: Added brewery instance: jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd
+Jicofo 2022-06-08 21:53:58.163 WARNING: [22] Main$1.warn#154: Key 'jicofo.bridge.average-participant-packet-rate-pps' from source 'typesafe config (reloaded 1 times)' is deprecated: use jicofo.bridge.average-participant-stress
+Jicofo 2022-06-08 21:53:58.165 INFO: [22] BridgeSelector.addJvbAddress#94: Added new videobridge: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=null, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 21:53:58.168 INFO: [33] JvbDoctor.bridgeAdded#129: Scheduled health-check task for: Bridge[jid=jvbbrewery@internal.auth.rapat.space/f84ffb73-d9d0-4fcd-9f9a-328abaf11abd, version=2.1.681-g3544ed05, relayId=null, region=null, stress=0.00]
+Jicofo 2022-06-08 21:54:17.837 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:19.561 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:24.901 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:30.367 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:30.368 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:30.369 INFO: [36] AbstractAuthAuthority.createNewSession#158: Authentication session created for jeprikusworo@rapat.space SID: 016b2df4-65f8-4e14-861d-13f265d1af66
+Jicofo 2022-06-08 21:54:30.370 INFO: [36] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: jeprikusworo@rapat.space/_10JgSzqFNfG with session: AuthSession[ID=jeprikusworo@rapat.space, JID=jeprikusworo@rapat.space/_10JgSzqFNfG, SID=016b2df4-65f8-4e14-861d-13f265d1af66, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=0, R=123@conference.rapat.space]@256772045
+Jicofo 2022-06-08 21:54:30.370 INFO: [36] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid jeprikusworo@rapat.space/_10JgSzqFNfG authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 21:54:30.384 INFO: [36] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.<init>#268: Created new conference.
+Jicofo 2022-06-08 21:54:30.385 INFO: [36] [room=123@conference.rapat.space] JitsiMeetConferenceImpl.joinTheRoom#452: Joining 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:31.052 INFO: [36] ConferenceIqHandler.handleConferenceIq#63: Focus request for room: 123@conference.rapat.space
+Jicofo 2022-06-08 21:54:31.053 INFO: [36] AbstractAuthAuthority.authenticateJidWithSession#431: Authenticated jid: tfpgz4jdujdbmmfqqp2uiyzm@guest.rapat.space/0xw0Dvt_27pk with session: AuthSession[ID=jeprikusworo@rapat.space, JID=tfpgz4jdujdbmmfqqp2uiyzm@guest.rapat.space/0xw0Dvt_27pk, SID=016b2df4-65f8-4e14-861d-13f265d1af66, MUID=f3ff3c38974a624ddec5e374758b8878, LIFE_TM_SEC=0, R=123@conference.rapat.space]@256772045
+Jicofo 2022-06-08 21:54:31.053 INFO: [36] AbstractAuthAuthority.notifyUserAuthenticated#339: Jid tfpgz4jdujdbmmfqqp2uiyzm@guest.rapat.space/0xw0Dvt_27pk authenticated as: jeprikusworo@rapat.space
+Jicofo 2022-06-08 21:54:31.373 INFO: [22] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JitsiMeetConferenceImpl.onMemberJoined#599: Member joined:bb43112d
+Jicofo 2022-06-08 21:54:40.062 INFO: [22] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/bb43112d' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA5MDUzZDJkNS03MDhkLTQ5NjItYWJhYi1jY2Q0YWYzZjdhNGE6c2VuZElRAK5sfSPShHXS' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 21:54:40.067 SEVERE: [36] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 21:54:40.068 INFO: [36] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 21:54:47.531 INFO: [22] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] BaseJibri.handleJibriRequest#75: Accepted jibri request: <iq xmlns='jabber:client' to='focus@auth.rapat.space/focus' from='123@conference.rapat.space/bb43112d' id='Zm9jdXNAYXV0aC5yYXBhdC5zcGFjZS9mb2N1cwA2MzkwOGY4Mi03ZWJhLTQxN2ItYjdjNS1kZTJlNzdhYWQ4MGE6c2VuZElRAK5sfSPShHXS' type='set'><jibri xmlns='http://jitsi.org/protocol/jibri' action='start' recording_mode='file' app_data='{"file_recording_metadata":{"share":true}}'/></iq>
+Jicofo 2022-06-08 21:54:47.531 SEVERE: [36] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JibriSession.startInternal#307: Unable to find an available Jibri, can't start
+Jicofo 2022-06-08 21:54:47.532 INFO: [36] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JibriRecorder.handleStartRequest#124: Failed to start a Jibri session, no Jibris available
+Jicofo 2022-06-08 21:54:52.304 INFO: [19] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JitsiMeetConferenceImpl.onMemberLeft#785: Member left:bb43112d
+Jicofo 2022-06-08 21:54:52.304 WARNING: [19] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JitsiMeetConferenceImpl.onMemberLeft#800: Participant not found for bb43112d. Terminated already or never started?
+Jicofo 2022-06-08 21:54:52.305 INFO: [19] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:54:52.306 INFO: [19] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] ColibriV2SessionManager.expire#115: Expiring.
+Jicofo 2022-06-08 21:54:52.306 INFO: [19] [room=123@conference.rapat.space meeting_id=6c6e4473-faa5-40d5-bd91-4d5f8af275c9] JitsiMeetConferenceImpl.stop#429: Stopped.
