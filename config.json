@@ -1,0 +1,32 @@
+{
+    "recording_directory":"/recordings",
+    "finalize_recording_script_path": "",
+    "xmpp_environments": [
+        {
+            "name": "prod environment",
+            "xmpp_server_hosts": [
+                "rapat.space"
+            ],
+            "xmpp_domain": "rapat.space",
+            "control_login": {
+                // The domain to use for logging in
+                "domain": "auth.rapat.space",
+                // The credentials for logging in
+                "username": "jibri",
+                "password": "{jibripass}"
+            },
+            "control_muc": {
+                "domain": "internal.auth.rapat.space",
+                "room_name": "JibriBrewery",
+                "nickname": "jibri"
+            },
+            "call_login": {
+                "domain": "recording.rapat.space",
+                "username": "recorder",
+                "password": "{recorderpass}"
+            },
+            "room_jid_domain_string_to_strip_from_start": "conference.",
+            "usage_timeout": "0"
+        }
+    ]
+}
